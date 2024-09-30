@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<script>
+    var options = {
+        gallery_options:{
+            type:'video',
+            gallery_style:'gallery-grid',
+            images:['https://lipsum.app/id/60/200x150','https://lipsum.app/id/60/200x150','https://lipsum.app/id/60/200x150'],
+            videos:[{link:'https://www.youtube.com/watch?v=tQJJ5IAsQ18',thumbnail:'https://lipsum.app/id/60/200x150'}]
+        }
+
+    }
+
+</script>
+<noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+</noscript>
+<div class="ap-gallery" data-val="options" style="--apbd-img-gallery-container-bg:red;--apbd-img-border-radius:5px;--apbd-img-per-column-count:5"></div>
+
+</body>
+</html>

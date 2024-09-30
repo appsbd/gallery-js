@@ -1,0 +1,36 @@
+{
+  "name": "client_panel",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.33",
+    "@jshmrtn/vue3-gettext": "^1.5.0",
+    "@popperjs/core": "^2.11.8",
+    "@vee-validate/rules": "^4.5.11",
+    "@vueform/multiselect": "^2.3.3",
+    "floating-vue": "^2.0.0-beta.17",
+    "axios": "^1.5.1",
+    "swiper": "^10.3.1",
+    "vee-validate": "^4.5.11",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^6.2.0",
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
