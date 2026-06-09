@@ -1,23 +1,25 @@
-const path = require("path");
+const path = require('path');
 
-const plugins=[];
+const plugins = [];
 /*if(process.env.NODE_ENV === 'production'){
   const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
   plugins.push(new BundleAnalyzerPlugin());
 }*/
 
 module.exports = {
-
-  outputDir: path.resolve(__dirname, "../../assets/"),
+  outputDir: path.resolve(__dirname, 'assets'),
   lintOnSave: false,
   productionSourceMap: false,
-  publicPath:'',
+  publicPath: '',
   filenameHashing: false,
   css: {
-    extract: (process.env.NODE_ENV === 'development' ? false : {
-      filename: 'css/style.css',
-    }),
-    sourceMap: process.env.NODE_ENV === 'development'
+    extract:
+      process.env.NODE_ENV === 'development'
+        ? false
+        : {
+            filename: 'css/style.css',
+          },
+    sourceMap: process.env.NODE_ENV === 'development',
   },
 
   configureWebpack: {
@@ -26,9 +28,8 @@ module.exports = {
       //chunkFilename: 'js/[name].js'
     },
     optimization: {
-      splitChunks: false
+      splitChunks: false,
     },
-    plugins: plugins
+    plugins: plugins,
   },
-
-}
+};
