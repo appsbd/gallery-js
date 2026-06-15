@@ -13,7 +13,7 @@
     "@vee-validate/rules": "^4.5.11",
     "@vueform/multiselect": "^2.3.3",
     "floating-vue": "^2.0.0-beta.17",
-    "axios": "^1.15.2",
+    "axios": "^1.16.0",
     "swiper": "^10.3.1",
     "vee-validate": "^4.5.11",
     "vue": "^3.2.13",
